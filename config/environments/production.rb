@@ -79,4 +79,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.middleware.use ActionCableGas
+  config.web_socket_server_url = "ws://104.131.167.51/"
 end
